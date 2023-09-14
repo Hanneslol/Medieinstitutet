@@ -4,11 +4,44 @@
     box-sizing: border-box;
 }
 body {
-    padding: 20px; 
+    padding: 20px;
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 75px auto 75px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn sb sb"
+    "ft ft ft ft ft ft ft ft ft"
+    ;
 }
+.header {
+    grid-area: hd;
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    grid-area: ft;
+    margin-top: 0.5rem;
+    }
+
+
+.el {
+    background-color: green;
+    color: yellow;
+    display: grid;
+            }
+
+.sidebar {
+    grid-area: sb;
+    background-color: blue;
+                    }
+            
+
 .container {
+    grid-area:mn ;
     display: grid;
     border: 1px dashed black;
     padding: 0.5rem;
@@ -26,7 +59,7 @@ body {
     background-color: black;
     color: white;
     padding: 0.5rem;
-    
+   
 }
 
 .box:first-child{
