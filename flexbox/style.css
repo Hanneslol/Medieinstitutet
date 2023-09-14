@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-size: 2rem;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    
+ 
+}
+
+.box {
+    background-color: black;
+    color: white;
+    max-width: 50px;
+    min-width: 100px;
+}
