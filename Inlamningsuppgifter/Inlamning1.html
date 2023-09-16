@@ -8,6 +8,34 @@
 </head>
 
 <body>
+    
+    <h1>text</h1>
+    <p>Hello World!</p>
+    <hr>
+        <h1>Heading 1</h1>
+    <hr>
+    <p>This paragraph contains a bold/strong <b>word</b> and an italic <i>word</i></p>
+    
+    <a href="https://www.google.com/webhp" title="Go to Google">Google</a>
+
+    <ol>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ol>
+
+    <ol>
+        <li>text
+          <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+          </ul>
+        </li>
+        <li>text</li>
+        <li>text</li>
+      </ol>
+
     <br><br><br>
     <table>
         <caption>September</caption>
@@ -65,7 +93,7 @@
                 <td>24</td>
             </tr>
             <tr>
-                <th>37</th>
+                <th>39</th>
                 <td>25</td>
                 <td>26</td>
                 <td>27</td>
@@ -88,39 +116,50 @@
         <title>Document</title>
     </head>
 
-    <body>
-        <form action="https://httpbin.org/get"></form>
+    
+        
+    <form >
         <fieldset>
 
             <legend>Student Info</legend>
             <fieldset>
-                <legend>Personal Info</legend>
-                <br>
-                <label for="pokemon">First name:</label>
+                <legend>Personal Info</legend><br>
 
-                <input type="text" name="firstName">
-                <br><br><label for="pokemon">Last name:</label>
+                <label for="firstName">First Name:</label>
+                <input 
+                type="text" 
+                name="firstName" 
+                id="firstName"
+                required>
+                <br><br>
 
-                <input type="text" name="lastName">
-                <br>
-                <br>
-                <label for="pokemon">Password:</label>
+                <label for="lastName">Last Name:</label>
+                <input 
+                type="text" 
+                name="lastName" 
+                id="lastName"
+                required>
+                <br><br>
 
-                <input type="password" name="passWord">
-                <br>
-                <br>
-                </form>
+                <label for="password">Password:</label>
+                <input 
+                type="password"
+                name="password"
+                id="password"
+                required>
+                <br><br>
             </fieldset>
 
             <fieldset>
                 <legend>Photo</legend>
-                <img src="/funemonke.jpg" height="200px" title="A funny ">
+                <img src="/Images/kingfisher.jpg" height="200px" title="Picture of Kingfisher" alt="Picture of Kingfisher">
+                <figcaption>A Kingfish Student! </figcaption>
 
             </fieldset>
-            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
+            <button formaction="https://httpbin.org/post" formmethod="post" submit>Submit</button>
 
         </fieldset>
-    </body>
+    </form>
 
     </html>
 
