@@ -1,0 +1,13 @@
+.p1, .p2, .p3 {
+  color: blue;
+  font-size: 3rem;
+}
+
+.p2, .p3 {
+  background-color: orange;
+}
+
+.p3 {
+  padding-left: 4rem;
+  margin-left: 4rem;
+}/*# sourceMappingURL=test.css.map */

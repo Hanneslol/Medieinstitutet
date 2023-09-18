@@ -1,0 +1,16 @@
+.p1 {
+    color: blue;
+    font-size: 3rem;
+}
+
+
+.p2 {
+    @extend .p1;
+    background-color: orange;
+}
+
+.p3 {
+    @extend .p2;
+    padding-left: 4rem;
+    margin-left: 4rem;
+}

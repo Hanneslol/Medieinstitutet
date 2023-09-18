@@ -9,13 +9,18 @@ First SASS file
   justify-content: center;
   align-items: center;
 }
+
 .main .section {
   font-weight: 700;
 }
+
 .main .section .p1 {
   font-weight: 400;
   color: red;
 }
+
 .main .mainSection p:hover {
   color: orange;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

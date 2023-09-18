@@ -4,6 +4,13 @@ First SASS file
 
 /* Variables */
 
+/*
+#
+*/
+
+@import "variables";
+@import "function";
+
 $textColor: blue;
 
 $fontSize: 3rem;
@@ -15,11 +22,12 @@ $fontWeights: (
     "bold": 700
 );
 $changeColor: (
-    "blue": blue,
+    "blue1": blue,
     "red1": red,
-    "green": green,
+    "green1": green,
 
 );
+
 
 @function weight($weight) {
     @return map-get($fontWeights, $weight);
