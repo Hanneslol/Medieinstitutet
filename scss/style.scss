@@ -1,0 +1,63 @@
+/*
+First SASS file
+*/
+
+/* Variables */
+
+$textColor: blue;
+
+$fontSize: 3rem;
+$primaryColor: green;
+$secondColor: rgb(68, 176, 211);
+$fontWeights: (
+    "regular":400,
+    "medium":500,
+    "bold": 700
+);
+$changeColor: (
+    "blue": blue,
+    "red1": red,
+    "green": green,
+
+);
+
+@function weight($weight) {
+    @return map-get($fontWeights, $weight);
+
+}
+
+@function color($color) {
+    @return map-get($changeColor, $color);
+
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main {
+    color: color(red);
+    background-color: $secondColor;
+    font-size: $fontSize;
+    @include center;
+
+    .section {
+        font-weight: weight(bold);
+
+        .p1 {
+            font-weight: weight(regular);
+            color: color(red1);
+        }
+    }
+
+    #{&}Section {
+        p:hover {
+            color: orange;
+        }
+    }
+
+
+}
