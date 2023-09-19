@@ -29,10 +29,7 @@ $fontWeights: (
 // );
 
 
-@function weight($weight) {
-    @return map-get($fontWeights, $weight);
 
-}
 
 // @function color($color) {
 //     @return map-get($changeColor, $color);
