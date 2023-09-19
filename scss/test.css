@@ -1,13 +1,18 @@
-.p1, .p2, .p3 {
+.p1, .p2, .p3, .p4 {
   color: blue;
   font-size: 3rem;
 }
 
-.p2, .p3 {
+.p2, .p3, .p4 {
   background-color: orange;
 }
 
-.p3 {
+.p3, .p4 {
   padding-left: 4rem;
   margin-left: 4rem;
+}
+
+.p4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }/*# sourceMappingURL=test.css.map */

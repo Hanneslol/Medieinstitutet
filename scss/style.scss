@@ -21,27 +21,9 @@ $fontWeights: (
     "medium":500,
     "bold": 700
 );
-// $changeColor: (
-//     "blue1": blue,
-//     "red1": red,
-//     "green1": green,
-
-// );
 
 
 
-
-// @function color($color) {
-//     @return map-get($changeColor, $color);
-
-// }
-
-@mixin center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 
 .main {
     color: color(red);
