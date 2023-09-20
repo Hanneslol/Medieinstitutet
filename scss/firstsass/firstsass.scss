@@ -53,16 +53,16 @@ $size: 400px;
 
 @mixin reduce ($maxwidth, $width) {
     @media (max-width: $maxwitdh) {
-        p {
-            width: $width;
-        }
+
+        width: $width;
     }
 }
 
+
 .p1 {
-    @include redue(200px, 400px)
+    @include redue($maxwidth, 400px)
 }
 
 .p2 {
-    @include redue(200px, 400px)
+    @include redue($maxwidth, 400px)
 }
