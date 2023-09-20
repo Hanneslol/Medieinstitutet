@@ -62,3 +62,7 @@ $size: 400px;
 .p1 {
     @include redue(200px, 400px)
 }
+
+.p2 {
+    @include redue(200px, 400px)
+}
