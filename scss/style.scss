@@ -9,7 +9,7 @@ First SASS file
 */
 
 @import "variables";
-@import "function";
+@import "functions";
 
 $textColor: blue;
 
@@ -21,30 +21,9 @@ $fontWeights: (
     "medium":500,
     "bold": 700
 );
-$changeColor: (
-    "blue1": blue,
-    "red1": red,
-    "green1": green,
-
-);
 
 
-@function weight($weight) {
-    @return map-get($fontWeights, $weight);
 
-}
-
-@function color($color) {
-    @return map-get($changeColor, $color);
-
-}
-
-@mixin center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 
 .main {
     color: color(red);
@@ -57,7 +36,10 @@ $changeColor: (
 
         .p1 {
             font-weight: weight(regular);
-            color: color(red1);
+            color: color(thirdcolor);
+        }
+        .p2{
+            color: color(secondcolor);
         }
     }
 
