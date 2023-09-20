@@ -1,0 +1,64 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+$width123: (
+    "width1": 100px,
+    "witdh2":200px,
+
+);
+
+@function width($width) {
+    @return map-get($width123, $width);
+}
+
+
+h2 {
+    font-size: 3rem;
+}
+
+$size: 400px;
+
+@mixin width1 {
+    width: 100px;
+}
+
+@media (max-width: $size) {
+
+    h2 .p1 {
+        font-size: 2rem;
+        color: blue;
+        @include center;
+
+    }
+
+    body {
+        @include center;
+        width: 50vw;
+        width: 200px;
+    }
+
+    .p2 {
+        @include width1;
+
+    }
+}
+
+
+@mixin reduce ($maxwidth, $width) {
+    @media (max-width: $maxwitdh) {
+        p {
+            width: $width;
+        }
+    }
+}
+
+.p1 {
+    @include redue(200px, 400px)
+}
