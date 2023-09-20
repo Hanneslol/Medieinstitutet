@@ -1,0 +1,34 @@
+@use 'sass:math';
+
+
+@function pxToem($pixel123) {
+    @return math.div($pixel123, 16)+em;
+}
+
+@function body-theme($bgcolor) {
+    @if $bgcolor =="light" {
+        @return black;
+    }
+
+    @else {
+        @return blue;
+    }
+}
+
+body {
+    font-weight: 700-200;
+    width: math.div(85.5%, 12%);
+    font-size: pxToem(30);
+    color: body-theme(light);
+}
+
+
+
+// $textColor: (
+//     "dark":black,
+//     "light": grey
+// );
+
+// @function color($color) {
+//     @return map-get($textColor, $color);
+// }
