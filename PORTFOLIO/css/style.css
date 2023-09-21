@@ -14,4 +14,15 @@
 }
 .home .last-name {
   color: rgb(73, 3, 3);
+}
+
+footer .social-icons {
+  background-color: blue;
+  height: 50px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 0.9rem;
+  width: 20px;
 }/*# sourceMappingURL=style.css.map */
