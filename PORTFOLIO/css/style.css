@@ -2,4 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.home {
+  background-image: url(../img/ocean.jpg);
+  width: 100%;
+  height: 100vh;
+  color: rgb(3, 87, 87);
+  text-align: center;
+  padding: 20px;
+}
+.home .last-name {
+  color: rgb(73, 3, 3);
 }/*# sourceMappingURL=style.css.map */
