@@ -20,7 +20,6 @@ ul {
 .li {
   text-decoration: none;
   color: white;
-  transition: 0.5s;
 }
 
 .li:hover {
