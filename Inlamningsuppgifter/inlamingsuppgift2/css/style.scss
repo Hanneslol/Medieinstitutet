@@ -1,0 +1,142 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    
+    background-color: rgb(65, 4, 88);
+   
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    list-style: none;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.li {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    
+}
+.li:hover {
+    color: yellow;
+    transition: 0.5s;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "flag flag flag flag flag flag"
+    "pic1 pic1 pic1 pic1 swe swe"
+    "some aut aut aut swe swe"
+    "some house house house swe swe"
+       
+    ;
+    
+
+    
+}
+
+
+
+.box:nth-child(1)
+
+{
+    background-color: blue;
+    grid-area: pic1;
+    color: white;
+    
+    
+}
+.box:nth-child(2)
+
+{
+    
+    order: 1;
+    grid-area: flag;
+}
+
+.box:nth-child(3)
+
+{
+    background-color: lightblue;
+    grid-area: swe;
+    color: white;
+}
+
+.box:nth-child(3)::first-letter{
+    color: yellow;
+    font-size: 3rem;
+}
+.box:nth-child(4)
+
+{
+    background-color: lightblue;
+    grid-area: some;
+    color: white;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    
+    
+    
+}
+.box:nth-child(5)
+
+{
+    background-color: purple;
+    grid-area: aut;
+    color: white;
+}
+.box:nth-child(6)
+
+{
+    background-color: purple;
+    grid-area: house;
+    color: white;
+}
+
+footer {
+    background-color: rgb(65, 4, 88);
+   text-align: right;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    
+}
+
+// .box {
+
+// }
+
+// p {
+//     writing-mode: vertical-lr;
+//     text-orientation: mixed;
+//   }
+//   .box4 {
+//     border-style: solid;
+//     grid-row-start: 3;
+//     width: 120px;
+//     display: flex;
+//     justify-content: center;
+//     background-color: $lightColor1;
+
+//     p:first-child {
+//       writing-mode: vertical-lr;
+//       text-orientation: mixed;
+//     }
+//   }
