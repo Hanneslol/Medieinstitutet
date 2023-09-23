@@ -32,7 +32,7 @@ ul {
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
   grid-auto-rows: auto;
-  grid-template-areas: "flag flag flag flag flag flag" "pic1 pic1 pic1 pic1 swe swe" "some aut aut aut swe swe" "some house house house swe swe";
+  grid-template-areas: "flag flag flag flag flag flag" "pic1 pic1 pic1 pic1 swe swe" "some pic2 pic2 pic2 swe swe" "some pic2 pic2 pic2 swe swe";
 }
 
 .box:nth-child(1) {
@@ -67,7 +67,7 @@ ul {
 
 .box:nth-child(5) {
   background-color: purple;
-  grid-area: aut;
+  grid-area: pic2;
   color: white;
 }
 
