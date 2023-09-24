@@ -59,7 +59,7 @@ body {
 }
 
 // Här valde jag att köra flexbox till min navbar så all text hamnar med spaceevenly 
-// och sen en lite padding så text hamnar lite mer centralt i menyn.
+// och sen en lite padding så text hamnar mer centralt i menyn.
 
 ul {
     display: flex;
@@ -87,7 +87,7 @@ ul {
 }
 
 // Gris kändes som enklaste och smidigaste sättet för den här uppgiften. Man kan göra på många olika sätt men jag valde att köra 6 stycken lika stora 
-// kolumner och sedan för det kändes som bra proportioner jämfört med bilden.
+// kolumner för det kändes som bra proportioner jämfört med bilden.
 // Gav hela containern en margin också så att den skalar bättre i fullscreen.
 
 .container{

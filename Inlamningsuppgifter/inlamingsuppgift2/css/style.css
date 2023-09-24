@@ -1,14 +1,8 @@
-/* Börjar med att ta bort all margin och padding */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Jag valde att använda två olika media queries. En som tar bort min margin efter bredden är 1100px. 
-Den andra media querien är mer för att bli anpassad för mindre skärmar eller mobiler. 
-Så efter 600px ändras min grid layout helt och även menyn litegrann. */
 
 @media only screen and (max-width: 1100px) {
   body .container {
@@ -16,8 +10,6 @@ Så efter 600px ändras min grid layout helt och även menyn litegrann. */
     margin-right: 0%;
   }
 }
-
-
 @media only screen and (max-width: 600px) {
   body .container {
     grid-template-areas: "flag flag flag flag flag flag" "pic1 pic1 pic1 pic1 pic1 pic1" "swe swe swe swe swe swe" "some pic2 pic2 pic2 pic2 pic2" "some pic2 pic2 pic2 pic2 pic2";
@@ -36,9 +28,6 @@ body {
   background-color: rgb(65, 4, 88);
 }
 
-/* Här valde jag att köra flexbox till min navbar så all text hamnar med spaceevenly 
-och sen en lite padding så text hamnar lite mer centralt i menyn. */
-
 ul {
   display: flex;
   justify-content: space-evenly;
@@ -55,19 +44,10 @@ ul {
   color: white;
 }
 
-/* Här ändrar jag så att menyn får en hover effekt till gul. Jag lade även till en transition så att färgövergången blir lite mjukare */
-
-
 .li:hover {
   color: yellow;
   transition: 0.5s;
 }
-
-/* Grid kändes som enklaste och smidigaste sättet för den här uppgiften. 
-Man kan göra på många olika sätt men jag valde att köra 6 stycken lika stora 
-kolumner och sedan för det kändes som bra proportioner jämfört med bilden.
-Gav hela containern en margin också så att den skalar bättre i fullscreen. */
-
 
 .container {
   display: grid;
@@ -79,17 +59,12 @@ Gav hela containern en margin också så att den skalar bättre i fullscreen. */
   grid-template-areas: "flag flag flag flag flag flag" "pic1 pic1 pic1 pic1 swe swe" "some pic2 pic2 pic2 swe swe" "some pic2 pic2 pic2 swe swe";
 }
 
-/* Stylar varje inidividuell box och tilldelar rätt grid-area namn så de hamnar på rätt plats. Lägger även till färg och lite padding på
-boxarna med bilder */
-
 .box:nth-child(1) {
   background-color: blue;
   grid-area: pic1;
   color: white;
   padding: 7% 5% 5% 5%;
 }
-
-/* Ser till så att jag använder rätt child så att flaggan hamnar högst upp öven om den boxen ligger efter första boxen i html */
 
 .box:nth-child(2) {
   grid-area: flag;
@@ -101,14 +76,10 @@ boxarna med bilder */
   color: white;
 }
 
-/* Här stylar jag första bokstaven på texte sweden så den är större och gul */
-
 .box:nth-child(3)::first-letter {
   color: yellow;
   font-size: 3rem;
 }
-
-/* Stylar box 4 så att texten hamnar vertikalt */
 
 .box:nth-child(4) {
   background-color: lightblue;
@@ -124,8 +95,6 @@ boxarna med bilder */
   color: white;
   padding: 7% 5% 5% 5%;
 }
-
-/* Footern valde jag att köra samma styling som menyn så de ser likadana ut. Sen flyttade jag texten till höger med text-align rightt */
 
 footer {
   background-color: rgb(65, 4, 88);
