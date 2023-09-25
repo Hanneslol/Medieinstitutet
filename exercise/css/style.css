@@ -1,0 +1,26 @@
+header {
+  background-color: red;
+  border: 5px solid grey;
+  border-radius: 5px;
+}
+
+header .navigation {
+  background-color: cyan;
+}
+
+main {
+  background-color: greenyellow;
+  border: 1px dashed black;
+}
+
+.content {
+  background-color: lightgreen;
+}
+
+section > p:first-child {
+  background-color: red;
+}
+
+section:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
