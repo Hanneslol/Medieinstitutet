@@ -5,6 +5,10 @@
     &__para {
         font-size: 3rem;
         color: red;
+
+        &--green {
+            color: green;
+        }
     }
 
     #{&}__para {

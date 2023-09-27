@@ -6,6 +6,9 @@
   font-size: 3rem;
   color: red;
 }
+.container__para--green {
+  color: green;
+}
 .container .container__para {
   font-size: 3rem;
   color: red;

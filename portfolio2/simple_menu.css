@@ -1,0 +1,30 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  background-color: black;
+  box-shadow: 1px 1px 5px 0px gray;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+/* Logo */
+.logo {
+  display: inline-block;
+  color: white;
+  font-size: 60px;
+  margin-left: 10px;
+}/*# sourceMappingURL=simple_menu.css.map */
