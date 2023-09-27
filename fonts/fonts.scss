@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Hanalei+Fill&display=swap');
+
+body {
+
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Hanalei Fill', cursive;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    font-size: 5rem;
+    // text-shadow: 1px 1px;
+    ;
+}
+
+h2 {
+    font-family: 'Barriecito', cursive;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+p {
+    font-family: 'Barriecito', cursive;
+    color: white;
+}
+
+.material-symbols-outlined {
+
+    font-size: 4rem;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
