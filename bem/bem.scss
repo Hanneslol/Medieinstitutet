@@ -1,0 +1,14 @@
+.container {
+    font-size: 2rem;
+    color: blue;
+
+    &__para {
+        font-size: 3rem;
+        color: red;
+    }
+
+    #{&}__para {
+        font-size: 3rem;
+        color: red;
+    }
+}

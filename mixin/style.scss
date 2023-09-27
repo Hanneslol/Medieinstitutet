@@ -1,6 +1,6 @@
 @use "mixin";
 
 .box {
-    @include mixin.box(10rem, yellow);
+    @include mixin.box(, green);
 
 }
