@@ -1,0 +1,57 @@
+*,*::after, *::before {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list {
+  /*   overflow: hidden; */
+  }
+  
+  .list > li {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .list > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 22px;
+    background: gold;
+  }
+  
+  .sub-list {
+    position: absolute;
+    width: 200px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sub-list > li > a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 22px;
+    background: green;
+    color: #fff;
+  }
+  
+  .list {
+  }
+  
+  .sub-list {
+    z-index: -1;
+    transition: all .5s;
+    transform: translateY(-100%);
+  }
+  
+  .list > li:hover .sub-list {
+    transform: translateY(0);
+  }
