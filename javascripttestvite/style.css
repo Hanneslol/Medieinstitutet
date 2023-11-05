@@ -12,6 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  margin: 0;
 }
 
 a {
@@ -23,17 +24,60 @@ a:hover {
   color: #535bf2;
 }
 
+
+
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+p {
+  font-size: 1.5rem;
+
+}
+  
+
 body {
-  margin: 0;
+  font-family: 'Rocher';
+  text-align: center;
+  height: 100vh;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  margin: 0;
+  
+}
+
+@font-palette-values --Grays {
+  font-family: Rocher;
+  base-palette: 9;
+}
+
+@font-palette-values --Purples {
+  font-family: Rocher;
+  base-palette: 6;
+}
+
+@font-palette-values --Mint {
+  font-family: Rocher;
+  base-palette: 7;
+}
+
+.grays {
+  font-palette: --Grays;
+}
+
+.purples {
+  font-palette: --Purples;
+}
+
+.mint {
+  font-palette: --Mint;
+  font-size: 4rem;
 }
 
 #app {
@@ -66,17 +110,30 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  border-color: #383838;
+  font-size: 1rem;
 }
 button:hover {
-  border-color: #646cff;
+  
+  background-color: #3b3b3b;
+}
+
+input[type=text] {
+  padding:15px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.548)
+  
+}
+input{
+  padding:10px;
+  border-radius:10px;
 }
 button:focus,
 button:focus-visible {
