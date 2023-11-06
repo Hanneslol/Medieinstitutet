@@ -25,7 +25,7 @@ for (let index = 0; index < dittnamn.length; index++) {
 
   document.body.appendChild(p);
   const lastspace = dittnamn[dittnamn.length - 1];
-  console.log(lastspace)
+
   if (dittnamn[index] == lastspace) {
     p.innerHTML = dittnamn[index];
 
@@ -34,3 +34,16 @@ for (let index = 0; index < dittnamn.length; index++) {
     p.innerHTML = dittnamn[index] + "&nbsp;-";
   }
 }
+
+
+const numbers = [1, 5, 6, 8, 9, 3, 5, 6, 7, 1]
+let summa = 0;
+for (let index = 0; index < numbers.length; index++) {
+  summa += numbers[index];
+
+
+
+
+
+}
+console.log(summa)
