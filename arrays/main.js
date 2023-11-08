@@ -47,3 +47,26 @@ for (let index = 0; index < numbers.length; index++) {
 
 }
 console.log(summa)
+
+// Value är animals [i]
+
+animals.forEach((value)) => {
+
+});
+
+const theNumber = 4711;
+let theGuess = 0
+
+
+while (theGuess !== theNumber) {
+
+}
+
+
+const numbers = [1, 1, 2, 3];
+
+const doubles = numbers.map((value) => {
+  return value * 2;
+});
+// Samma sak
+const doubles = numbers.map((value) => value * 2);
