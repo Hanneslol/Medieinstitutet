@@ -84,7 +84,7 @@ async function logMovies() {
     const movieDiv = document.createElement("div")
 
     const section = document.createElement("section");
-    section.id = "mySection";
+    section.igitnd = "mySection";
     section.innerHTML = movies[index].name
     document.body.appendChild(section);
     console.log(movies)
