@@ -1,8 +1,9 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
+
 import { Movies } from './Movies'
-import { resolvePackageEntry } from 'vite'
+import { searchRecipes } from './recipeService'
+import { createHtml } from './createHtml'
+
 
 let myMovies = []
 
@@ -46,105 +47,38 @@ fetch("http://www.omdbapi.com/?i=tt3896198&apikey=8093d85c&s=jurassic")
   }
   )
 
-         promise                  promise < response >
-            |                             |
-  const response = await fetch(...Movies.apply.)
 
-const data = await response.json();
-
-
-
-try {
-}
-
-catch (error) {
-}
+fetch("https://api.spoonacular.com/recipes/716429/information?apiKey=cb9d8e0bc3a24cb2a55afed1c47395b3&includeNutrition=true")
+  .then((response) => response.json())
+  .then((wow) => {
+    console.log(wow)
+  })
 
 
+//   GET https://api.spoonacular.com/recipes/complexSearch
 
-button.addEventListener("click"() =>
-  {
-    const r = await fetch("...")
-  const data = await response.json();
-  });
+// query
+// fetch("https://api.spoonacular.com/recipes/complexSearch/?apiKey=cb9d8e0bc3a24cb2a55afed1c47395b3&query=cheese")
+//   .then((response) => response.json())
+//   .then((wow2) => {
+//     console.log(wow2)
+//   })
 
-.env API_KEY = 123123
-
-  .env.development  API_KEY = 123123
-
-import.meta.env.VITE_API_KEY
-
-
-main.js dela upp i olika document: services, models, htmlCreator
+// const response = await fetch("https://api.spoonacular.com/recipes/complexSearch/?apiKey=cb9d8e0bc3a24cb2a55afed1c47395b3&query=cheese")
+// const data = await response.json();
 
 
-movieService.js
-
-create, read, update, delete, = CRUD
+// console.log(data)
 
 
 
-services: olika funktioner searchMovies
-getMovieById
+document.getElementById("searchForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
 
-serviceBase.js
+  const recipesToSearchFor = document.getElementById("searchText").value;
 
-
-Presentation -> application -> data
-
-
-main.js
-
-movieService.js      service.Base
-
-
-
-main.js:
-
-document.getElementById("") "Click, async ()" => {
-
-  await searchMovies(input.value);
-  createHtml(m);
-}
-
-movieSearch.js
-
-const searchMovies = async (title) => {
-
-  const data = await get("...")
-  return []
-
-
-}
-
-
-
-serviceBase.js
-
-const get = async (url) => {
-  fetch(url)
-  const r = await fetch(url);
-  const data = await r.json;
-  return data.Search
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  const recipes = await searchRecipes(recipesToSearchFor);
+  createHtml(recipes);
+});
 
 
