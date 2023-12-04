@@ -1,0 +1,78 @@
+const name: string = "Sebastian"
+
+Komplexa datatyper måste anges
+
+const age 44
+const numbers: numver[] = [1, 2, 3, 4, 5]
+numbers.push();
+numvers push("hej") funkar inte, måste vara ett tal
+
+class Person {
+    name: string;
+    age: number;
+    isMarried: boolean;
+
+    constructor(name: string, age: number, isMaried: boolean)){
+    this.name = name
+
+
+    class Person {
+
+        constructor(
+            public name: string
+            public age: number
+            public isMarried: boolean
+        )
+    }
+
+
+}
+
+const p: Person = new Person("Sebastian", 44)
+p.name
+p.age
+p.isMarried
+
+
+
+}
+
+
+
+class Todo {
+    isDone: boolean;
+    constructor(public text: string) {
+        this.isDone = false;
+    }
+}
+//CSS
+scroll - StereoPannerNode.type: y mandatory:
+
+
+function sum(x: number, y: number): number {
+    const theResult: number = x + y;
+
+
+
+
+    return theResult
+}
+const s = sum(10, 20)
+
+const p = document.getElementById("pTag")
+datatyp: HTMLElement
+
+
+Gör till en if sats, annars kommer den inte fungera.
+
+const userInput = document.getElementById("theInput") as HTMLInputElement;
+HTMLElement
+
+const save = document.getElementById("button")
+HTMLButtonElement
+
+
+ts src / ts / main.ts
+
+
+npm i vite - plugin - checker - D
